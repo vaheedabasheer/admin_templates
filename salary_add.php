@@ -8,9 +8,10 @@ $rid=$_POST['sel'];
 $month=$_POST['month'];
 
 $job=$_POST['job'];
-// var_dump($job);
-// exit();
+
 $salary=$_POST['salary'];
+// var_dump($salary);
+// exit();
 mysqli_query($con,"INSERT INTO `salary`(`rid`, `month`, `salary`, `job`) VALUES ('$rid','$month','$salary','$job')");
 
 echo "<script>alert ('inserted successfully');</script>";
@@ -108,7 +109,7 @@ echo "<script>alert ('inserted successfully');</script>";
                                 <div class="row mb-3">
                                     <label for="Salary" class="col-sm-2 col-form-label">Salary</label>
                                     <div class="col-sm-10">
-                                        <input type="number" name="Salary" class="form-control" id="Salary" required>
+                                        <input type="number" name="salary" class="form-control" id="Salary" required>
                                     </div>
                                 </div>
                               
